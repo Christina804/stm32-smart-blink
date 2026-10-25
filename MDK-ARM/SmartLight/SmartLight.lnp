@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"smartlight\startup_stm32f103xb.o"
+"smartlight\main.o"
+"smartlight\gpio.o"
+"smartlight\adc.o"
+"smartlight\tim.o"
+"smartlight\stm32f1xx_it.o"
+"smartlight\stm32f1xx_hal_msp.o"
+"smartlight\stm32f1xx_hal_gpio_ex.o"
+"smartlight\stm32f1xx_hal_adc.o"
+"smartlight\stm32f1xx_hal_adc_ex.o"
+"smartlight\stm32f1xx_hal.o"
+"smartlight\stm32f1xx_hal_rcc.o"
+"smartlight\stm32f1xx_hal_rcc_ex.o"
+"smartlight\stm32f1xx_hal_gpio.o"
+"smartlight\stm32f1xx_hal_dma.o"
+"smartlight\stm32f1xx_hal_cortex.o"
+"smartlight\stm32f1xx_hal_pwr.o"
+"smartlight\stm32f1xx_hal_flash.o"
+"smartlight\stm32f1xx_hal_flash_ex.o"
+"smartlight\stm32f1xx_hal_exti.o"
+"smartlight\stm32f1xx_hal_tim.o"
+"smartlight\stm32f1xx_hal_tim_ex.o"
+"smartlight\system_stm32f1xx.o"
+--strict --scatter "SmartLight\SmartLight.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SmartLight.map" -o SmartLight\SmartLight.axf

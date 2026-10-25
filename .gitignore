@@ -53,3 +53,15 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Keil 工程忽略（保留hex）
+*.bin
+*.axf
+*.crf
+*.lnp
+*.dep
+*.i
+*.uvguix.*
+Listings/
+Objects/
+
